@@ -39,12 +39,8 @@
                     <!-- Registro y Login arriba a la derecha -->
                     <div class="absolute top-0 right-0 z-20 flex items-center space-x-4 p-4">
                         @auth
-                            <!-- Usuario logueado -->
-                            <a href="{{ route('dashboard') }}" 
-                            class="bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded-full hover:bg-yellow-300 hover:scale-105 transition duration-300 ease-in-out shadow-lg">
-                                Dashboard
-                            </a>
 
+                        
                             <form method="POST" action="{{ route('logout') }}" class="inline">
                                 @csrf
                                 <button type="submit" 
